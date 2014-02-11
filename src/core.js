@@ -1,11 +1,11 @@
 JPF.genParticles = function(){
-	var N = 200;
+	var N = 20;
 	var i;
 
 	for(i = 0; i < N; i++){
 		var particle = {};
 
-		particle.m = 1.8*Math.random() + 0.2;
+		particle.m = 48*Math.random() + 0.2;
 		particle.r = 0.01 * Math.sqrt(particle.m);
 
 		particle.color = [Math.random()*255|0,Math.random()*255|0,Math.random()*255|0,1];

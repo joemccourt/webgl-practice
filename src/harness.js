@@ -32,14 +32,13 @@ window.onload = function(){
     initGL(canvas);
     initShaders();
     initBuffers();
-
+	initTexture();
+	
     gl.clearColor(0.0, 0.0, 0.0, 1.0);
     gl.enable(gl.DEPTH_TEST);
     drawScene();
 
     requestNextAnimationFrame(JPF.gameLoop);
-
-	requestNextAnimationFrame(JPF.gameLoop);
 	JPF.initEvents();
 };
 
